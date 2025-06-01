@@ -28,4 +28,11 @@ fun main() {
         println("Parâmetro id recebido: $id")    // Exemplo de uso de “id”
         0F // Valor retornado pela lambda; corresponde ao retorno de calculaBonus()
     }
+
+    var exemplo = imprimeValorBonusLambda { str, id ->
+
+        println("Parâmetro str recebido: $str")
+        println("Parâmetro id recebido: $id")
+        0F
+    }
 }
