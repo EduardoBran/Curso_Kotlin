@@ -13,8 +13,11 @@ class Goblin(health: Int, attack: Int, defense: Int) : Character(health, attack,
     /**
      * Representação textual do Goblin.
      */
-    override fun toString(): String {
-        // Exercicio: Como melhorar para imprimir o nome do inimigo?
-        return super.toString()
+
+    // Exercicio: Como melhorar para imprimir o nome do inimigo?
+    override fun toString(): String { // (concluído: forma 2)
+
+        val nome = this::class.simpleName
+        return "$nome(vida = $health, ataque = $attack, defesa = $defense"
     }
 }
